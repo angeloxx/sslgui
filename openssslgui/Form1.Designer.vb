@@ -24,17 +24,17 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtDecodeIn = New System.Windows.Forms.TextBox()
         Me.txtDecodeOut = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblNodesPassword = New System.Windows.Forms.Label()
         Me.txtNodesPass = New System.Windows.Forms.TextBox()
         Me.txtNodesIn = New System.Windows.Forms.TextBox()
         Me.txtNodesOut = New System.Windows.Forms.TextBox()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.lblStatusBar = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.lblNodesPassword = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -63,6 +63,15 @@ Partial Class frmMain
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "DecodeX509"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 6)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(67, 30)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(CRT/CSR)"
         '
         'txtDecodeIn
         '
@@ -100,22 +109,40 @@ Partial Class frmMain
         Me.TabPage2.Text = "NoDES"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(35, 30)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Key)"
+        '
+        'lblNodesPassword
+        '
+        Me.lblNodesPassword.AutoSize = True
+        Me.lblNodesPassword.Location = New System.Drawing.Point(6, 112)
+        Me.lblNodesPassword.Name = "lblNodesPassword"
+        Me.lblNodesPassword.Size = New System.Drawing.Size(61, 15)
+        Me.lblNodesPassword.TabIndex = 5
+        Me.lblNodesPassword.Text = "Password"
+        '
         'txtNodesPass
         '
-        Me.txtNodesPass.Location = New System.Drawing.Point(73, 109)
+        Me.txtNodesPass.Location = New System.Drawing.Point(75, 109)
         Me.txtNodesPass.Name = "txtNodesPass"
         Me.txtNodesPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtNodesPass.Size = New System.Drawing.Size(615, 20)
+        Me.txtNodesPass.Size = New System.Drawing.Size(613, 20)
         Me.txtNodesPass.TabIndex = 4
         '
         'txtNodesIn
         '
         Me.txtNodesIn.Font = New System.Drawing.Font("Consolas", 8.830189!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNodesIn.Location = New System.Drawing.Point(73, 6)
+        Me.txtNodesIn.Location = New System.Drawing.Point(75, 6)
         Me.txtNodesIn.Multiline = True
         Me.txtNodesIn.Name = "txtNodesIn"
         Me.txtNodesIn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtNodesIn.Size = New System.Drawing.Size(615, 93)
+        Me.txtNodesIn.Size = New System.Drawing.Size(613, 93)
         Me.txtNodesIn.TabIndex = 3
         '
         'txtNodesOut
@@ -143,33 +170,6 @@ Partial Class frmMain
         '
         Me.lblStatusBar.Name = "lblStatusBar"
         Me.lblStatusBar.Size = New System.Drawing.Size(0, 17)
-        '
-        'lblNodesPassword
-        '
-        Me.lblNodesPassword.AutoSize = True
-        Me.lblNodesPassword.Location = New System.Drawing.Point(6, 112)
-        Me.lblNodesPassword.Name = "lblNodesPassword"
-        Me.lblNodesPassword.Size = New System.Drawing.Size(61, 15)
-        Me.lblNodesPassword.TabIndex = 5
-        Me.lblNodesPassword.Text = "Password"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(34, 15)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Input"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 6)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 15)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Input"
         '
         'frmMain
         '

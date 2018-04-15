@@ -9,4 +9,4 @@ You can drag&drop or copy&paste che certificate into the text area.
 
 # Requirements
 
-- OpenSSL library
+- OpenSSL library (Install-Package ManagedOpenSsl32 with nuget)
